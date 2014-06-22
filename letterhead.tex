@@ -1,0 +1,85 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+\documentclass[letterpaper]{letter}
+\usepackage{fontspec}
+\usepackage[includeheadfoot,margin=1.1in]{geometry}
+\usepackage[USenglish]{babel}
+\usepackage{graphicx, textpos}
+\usepackage{color}
+
+% http://nitens.org/taraborelli/cvtex
+% FONTS
+\defaultfontfeatures{Mapping=tex-text} % converts LaTeX specials (``quotes'' --- dashes etc.) to unicode
+\setromanfont[Ligatures={Common}, Kerning=Uppercase,Numbers=OldStyle,SmallCapsFont={YaleDesign-WebSmallCap},ItalicFont={YaleDesign-Italic}]{YaleDesign-Roman}
+
+%\setromanfont [Ligatures={Common}, Numbers={OldStyle}]{GentiumAlt}
+\setmonofont[Scale=0.8]{Monaco}
+\setsansfont[Scale=0.9]{Optima Regular}
+
+
+
+
+\definecolor{yaleblue}{RGB}{0,52,106}
+
+\oddsidemargin=.5in
+\evensidemargin=.5in
+\textwidth=12.5cm
+\topmargin=0cm
+\textheight=20cm
+
+\date{}
+
+\signature{
+	\vspace{-1cm}
+	\hspace*{-1cm}\includegraphics[width=4.5cm]{img/signature.png}\\
+	\vspace{-0.5cm}
+	John Handcock\\
+	\emph{Sponsor \& Sponsor\\Professor of Finance}
+}
+\begin{document}
+
+
+
+\begin{letter}{
+	February 28, 2014\\\bigskip
+	Dude Duder\\
+	Department of Dudeship\\
+	University of Dudes
+}
+                           
+\begin{textblock}{4}(-1.4,-2.2)
+\noindent
+\hspace*{-0.35cm}\includegraphics[width=4.55in]{img/yale-som-logo.png}
+\end{textblock}
+
+{
+	\footnotesize
+	\begin{textblock}{3}(9.45,-1)
+		{
+			\color{yaleblue}
+			\noindent
+			\textsc{John Handcock}\\
+			\emph{Sponsor \& Sponsor\\Professor of Finance}
+
+			PO  Box 208200\\
+			New Haven CT 06520-8200\\
+			T 203 432-2286\\
+			john.handcock@yale.edu\\
+			{\em http://som.yale.edu}
+
+			{\em courier}\\
+			165 Whitney Ave.\\
+			New Haven CT 06511\\
+		}
+	\end{textblock}
+}
+
+	\opening{Dude,}
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+
+\closing{\vspace{1cm}Sincerely,}
+\end{letter}
+
+\end{document}
