@@ -1,8 +1,8 @@
 # Yale School of Management LaTeX Letterhead
 
 I use [XeLaTeX](http://www.xelatex.org/) via the [MacTex](https://tug.org/mactex/)
-distribution on my Macs. XeLaTeX is great because it gives you all the
-[beauty of LaTeX typosetting](http://nitens.org/taraborelli/latex)
+distribution on my Macs. XeLaTeX gives you all the
+[beauty of LaTeX typesetting](http://nitens.org/taraborelli/latex)
 with your Mac system fonts via
 [fontspec](http://www.ctan.org/tex-archive/macros/xetex/latex/fontspec/).
 
