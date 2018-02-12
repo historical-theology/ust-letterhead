@@ -10,16 +10,7 @@ This LaTeX Yale SOM
 letterhead conforms to that which I've seen in the wild;
 however, SOM's placement of the school shield appears to be non-conforming with the
 official [Yale letterhead guidelines](http://www.yale.edu/printer/identity/stationery.html).
-This letterhead uses the [Yale typeface](http://www.yale.edu/printer/typeface/),
-by [Matthew Carter](http://en.wikipedia.org/wiki/Matthew_Carter),
-which you can [download](http://www.yale.edu/printer/typeface/download.html)
-if you are a Yalie. You'll want to use [fontforge](http://fontforge.org/)
-to convert the fonts from
-[PostScript Type 1](http://en.wikipedia.org/wiki/PostScript_fonts#Type_1)
-to [OpenType](http://en.wikipedia.org/wiki/OpenType) format. (If you're
-at Yale, you can also e-mail me and I'll share them with you in OTF format.)
-Once they are in OTF format, you can install them on your Mac and use them
-in XeLaTeX.
+This letterhead uses the [Yale typeface](https://yaleidentity.yale.edu/typeface/download-yale-typeface).
 
 Enjoy!
 
