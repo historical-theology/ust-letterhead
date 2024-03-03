@@ -14,6 +14,17 @@ Persons not affiliated with the University of St. Thomas and/or
 who otherwise cannot abide by those guidelines may *not*
 use the UST logo that is provided in the img/ folder.
 
+## Special Features
+
+1. Alignment with the University of St. Thomas's official branding
+requirements (see above).
+
+2. Automatic date generation with `\usepackage[useregional]{datetime2}`
+and `/today`.
+
+3. Elegant body text font, that is, Dr. Edward Tufte's official book font.
+
+
 ## Requirements
 
 1. TeXLive or another LaTeX distribution with XeLaTeX
