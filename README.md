@@ -1,6 +1,6 @@
 # University of St. Thomas (Houston) ~ Unofficial Letterhead
 
-*Based on the [Yale School of Management's LaTeX letterhead style](https://github.com/kljensen/yale-som-letterhead)*
+*Heavily customized from the [Yale School of Management's LaTeX letterhead style](https://github.com/kljensen/yale-som-letterhead)*
 
 I have preserved the original's "unlicense."
 
@@ -18,12 +18,15 @@ use the UST logo that is provided in the img/ folder.
 
 1. TeXLive or another LaTeX distribution with XeLaTeX
 
-2. Goudy Old Style Regular (for the branded heading)
+2. Fonts:
+a. Goudy Old Style Regular (for the UST branded heading)
+b. ET Bembo OT Roman (for the body text) -- or another font of your choosing
 
-For ease of use, I have included the file `Goudy Old Style Regular.ttf` 
-in this repository's root directory. 
-Persons eligible to use the typeface should, 
-therefore, not have to do any additional setup.
+For ease of use, I have included the files `Goudy Old Style Regular.ttf`
+(proprietary) and `ETBook-OT-Roman.otf` (freely distributable) 
+in this repository's root directory. Persons eligible to use
+Goudy Old Style Regular and who would like to use ET Book
+should, therefore, be able to use the directory as-is with XeLaTeX.
 
 ## Usage
 

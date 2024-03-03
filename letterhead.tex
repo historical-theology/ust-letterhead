@@ -1,78 +1,94 @@
 %!TEX TS-program = xelatex
 %!TEX encoding = UTF-8 Unicode
-\documentclass[letterpaper]{letter}
+\documentclass[letterpaper,12pt]{letter}
 \usepackage{fontspec}
 \usepackage[includeheadfoot,margin=1.1in]{geometry}
 \usepackage[USenglish]{babel}
 \usepackage{graphicx, textpos}
 \usepackage{color}
+\usepackage{microtype}			% Corey's addition; smoothes paragraphs
 
 % http://nitens.org/taraborelli/cvtex
 % FONTS
 \defaultfontfeatures{Mapping=tex-text} % converts LaTeX specials (``quotes'' --- dashes etc.) to unicode
-\setromanfont[Ligatures={Common}, Numbers=OldStyle]{YaleNew}
+\setromanfont[Ligatures={Common}, Numbers=OldStyle]{ETBookOT-Roman.otf}
+\newfontfamily{\usttext}[Ligatures={Common}, Numbers=OldStyle]{Goudy Old Style Regular.ttf} % UST font
+\DeclareTextFontCommand{\textusttext}{\usttext} 
+% Goudy Old Style Regular is the official UST font. ET Book is my (Corey's) favorite font.
+% If you are a colleague, then, you ought to 
 
-%\setromanfont [Ligatures={Common}, Numbers={OldStyle}]{GentiumAlt}
-\setmonofont[Scale=0.8]{Monaco}
-\setsansfont[Scale=0.9]{Optima Regular}
+\usepackage[
+  bookmarks,  % Create PDF bookmarks
+  colorlinks, % Use the link colour from above
+  breaklinks  % Break links in the text
+]{hyperref}
 
+\hypersetup{%
+  urlcolor=ustblue,
+  pdfauthor={Corey J. Stephan, Ph.D.},                  % TODO: Add your own name here
+  pdftitle={Corey J. Stephan, Ph.D.: Curriculum vitae}, % TODO: Add your own name here
+  pdfproducer={}
+}
 
+\definecolor{ustred}{RGB}{255,0,0} 		% Official UST red
+\definecolor{ustblue}{RGB}{130,139,196}	% Officially recommended UST blue font
 
+% For more University of St. Thomas branding guidelines, visit:
+% https://www.stthom.edu/Public/getFile.asp?File_Content_ID=100774
 
-\definecolor{yaleblue}{RGB}{0,52,106}
-
-\oddsidemargin=.5in
-\evensidemargin=.5in
-\textwidth=12.5cm
-\topmargin=0cm
+\oddsidemargin=0in
+\evensidemargin=0in
+\textwidth=15cm
+\topmargin=-2cm % A negative top margin fixes the alignment of the UST logo
 \textheight=20cm
 
 \date{}
 
+\usepackage[useregional]{datetime2}
+
 \signature{
 	\vspace{-1cm}
-	\hspace*{-1cm}\includegraphics[width=4.5cm]{img/signature.png}\\
-	\vspace{-0.5cm}
-	John Handcock\\
-	\emph{Sponsor \& Sponsor\\Professor of Finance}
+	\hspace*{-.75cm}\includegraphics[width=4.5cm]{img/signature.png}\\
+	\vspace{-.25cm}
+	Corey J. Stephan, Ph.D. \\ % Replace with your own name
+	% Assistant Professor of Theology \& Fellow of the Core % If desired, replace with your own title
 }
+
 \begin{document}
 
-
-
 \begin{letter}{
-	February 28, 2014\\\bigskip
+	\today \\\bigskip % Automatically start with today's date; manually type another date, if needed
 	Dude Duder\\
 	Department of Dudeship\\
 	University of Dudes
 }
                            
-\begin{textblock}{4}(-1.4,-2.2)
+\begin{textblock}{4}(-0.5,-2.2)
 \noindent
-\hspace*{-0.35cm}\includegraphics[width=4.55in]{img/yale-som-logo.png}
+\hspace*{-0.35cm}\includegraphics[width=4in]{img/ust-logo.eps}
 \end{textblock}
 
 {
-	\footnotesize
-	\begin{textblock}{3}(9.45,-1)
+	\footnotesize % Yale chose footnotesize; I (Corey) prefer small
+	\usttext\begin{textblock}{3}(8.5,-2) %  Yale used 9.5 with footnotesize; I (Corey) prefer alignment 9 right with small
 		{
-			\color{yaleblue}
+			\color{ustred}
 			\noindent
-			\textsc{John Handcock}\\
-			\emph{Sponsor \& Sponsor\\Professor of Finance}
-
-			PO  Box 208200\\
-			New Haven CT 06520-8200\\
-			T 203 432-2286\\
-			john.handcock@yale.edu\\
-			{\em http://som.yale.edu}
-
-			{\em courier}\\
-			165 Whitney Ave.\\
-			New Haven CT 06511\\
+			\textsc{Corey J. Stephan, Ph.D.}\\
+			\emph{Asst. Professor of Theology \\ \& Fellow of the Core}
+			
+			Divsion of Liberal Studies \\			
+			University of St. Thomas \\
+			3800 Montrose Boulevard \\
+			Houston, TX 77006 \\
+			713-522-7911
+			% +1 111-111-111 \\ 													
+			% \href{mailto:corey.stephan@stthom.edu}{corey.stephan@stthom.edu}
+			% Optional: Personal phone number and email address
 		}
 	\end{textblock}
 }
+
 
 	\opening{Dude,}
 
