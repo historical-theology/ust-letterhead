@@ -1,20 +1,43 @@
-# Yale School of Management LaTeX Letterhead
+# University of St. Thomas (Houston) ~ Unofficial Letterhead
 
-I use [XeLaTeX](http://www.xelatex.org/) via the [MacTex](https://tug.org/mactex/)
-distribution on my Macs. XeLaTeX gives you all the
-[beauty of LaTeX typesetting](http://nitens.org/taraborelli/latex)
-with your Mac system fonts via
-[fontspec](http://www.ctan.org/tex-archive/macros/xetex/latex/fontspec/).
+*Based on the [Yale School of Management's LaTeX letterhead style](https://github.com/kljensen/yale-som-letterhead)*
 
-This LaTeX Yale SOM
-letterhead conforms to that which I've seen in the wild;
-however, SOM's placement of the school shield appears to be non-conforming with the
-official [Yale letterhead guidelines](http://www.yale.edu/printer/identity/stationery.html).
-This letterhead uses the [Yale typeface](https://yaleidentity.yale.edu/typeface/download-yale-typeface).
+I have preserved the original's "unlicense."
 
-Enjoy!
+The University of St. Thomas's branding is available for the 
+use of faculty, staff, and students,
+according to these official guidelines:
 
-## Authors
+https://www.stthom.edu/Public/getFile.asp?File_Content_ID=100774
+
+Persons not affiliated with the University of St. Thomas and/or
+who otherwise cannot abide by those guidelines may *not*
+use the UST logo that is provided in the img/ folder.
+
+## Requirements
+
+1. TeXLive or another LaTeX distribution with XeLaTeX
+
+2. Goudy Old Style Regular (for the branded heading)
+For ease of use, I have included the file `Goudy Old Style Regular.ttf` 
+in this repository's root directory. 
+Persons eligible to use the typeface should, 
+therefore, not have to do any additional setup.
+
+## Usage
+
+1. Replace Dr. Corey Stephan's information in the template with your own.
+
+2. (Optional) Replace img/signature.png with a transparent facsimile of your own signature.
+
+3. Write your letter.
+
+4. Export with XeLaTeX, e.g. `xelatex letterhead.tex`.
+
+## UST Faculty Author
+* [Corey Stephan, Ph.D.](https://www.coreystephan.com)
+
+## Original Authors (Yale)
 * [Olav Sorenson](http://som.yale.edu/olav-sorenson) (original)
 * [Kyle Jensen](https://github.com/kljensen)
 
