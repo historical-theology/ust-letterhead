@@ -19,6 +19,7 @@ use the UST logo that is provided in the img/ folder.
 1. TeXLive or another LaTeX distribution with XeLaTeX
 
 2. Goudy Old Style Regular (for the branded heading)
+
 For ease of use, I have included the file `Goudy Old Style Regular.ttf` 
 in this repository's root directory. 
 Persons eligible to use the typeface should, 
