@@ -7,11 +7,12 @@
 \usepackage{graphicx, textpos}
 \usepackage{color}
 \usepackage{microtype}	% Corey's addition; smoothes paragraphs
+\usepackage[oldstyle,proportional]{ETbb}	% ET Book, oldstyle and proportional
 
 % http://nitens.org/taraborelli/cvtex
 % FONTS
 \defaultfontfeatures{Mapping=tex-text} % converts LaTeX specials (``quotes'' --- dashes etc.) to unicode
-\setromanfont[Ligatures={Common}, Numbers=OldStyle]{ETBookOT-Roman.otf}
+% \setromanfont[Ligatures={Common}, Numbers=OldStyle]{ETBookOT-Roman.otf}
 \newfontfamily{\usttext}[Ligatures={Common}, Numbers=OldStyle]{Goudy Old Style Regular.ttf} % UST font
 \DeclareTextFontCommand{\textusttext}{\usttext} 
 % Goudy Old Style Regular is the official UST font. ET Book is my (Corey's) favorite font.
@@ -46,6 +47,7 @@
 \date{}
 
 \usepackage[useregional]{datetime2}
+\usepackage[defaultlines=2,all]{nowidow}	% Rejects orphaned and widowed lines of more than 2
 
 \signature{
 	\vspace{-1cm}
